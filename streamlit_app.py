@@ -7,7 +7,8 @@ import tempfile
 import pygame
 import pandas as pd
 import plotly.express as px
-from streamlit_webrtc import webrtc_streamer, VideoTransformerBase, RTCConfiguration
+from streamlit_webrtc import webrtc_streamer, VideoTransformerBase, RTCConfiguration, WebRtcMode
+
 
 # Load YOLO pretrained model
 @st.cache_resource
