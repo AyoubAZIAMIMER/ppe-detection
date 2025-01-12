@@ -76,7 +76,7 @@ def process_webcam(model, conf):
 
     webrtc_streamer(
         key="webcam",
-        mode="transform",
+        mode=WebRtcMode.SENDRECV,
         rtc_configuration=RTC_CONFIGURATION,
         video_transformer_factory=lambda: VideoTransformer(model, conf),
         media_stream_constraints={"video": True, "audio": False},  # Enable video only
