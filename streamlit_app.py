@@ -35,7 +35,7 @@ def alert_system(frame, detected_classes):
     if not pygame.mixer.get_init():
         pygame.mixer.init()
 
-    alert_sound = pygame.mixer.Sound("emergency-siren-alert.mp3")  # Ensure the path to the sound file is correct
+    alert_sound = pygame.mixer.Sound("EMERGE~1.MP3")  # Ensure the path to the sound file is correct
 
     if any(cls in [2, 3, 4] for cls in detected_classes):  # NO-Hardhat, NO-Mask, NO-Safety Vest
         if not pygame.mixer.get_busy():  # Play sound only if not already playing
